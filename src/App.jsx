@@ -1,5 +1,5 @@
 
-import {createBrowserRouter, RouterProvider} from 'react-router-dom';
+import { createHashRouter, RouterProvider} from 'react-router-dom';
 import './App.css'
 import Layout from './componets/Layout/Layout';
 import Brand from './componets/Brand/Brand';
@@ -33,7 +33,7 @@ let query = new QueryClient();
 
 
 
-let x = createBrowserRouter([
+let x = createHashRouter([
   {
     path: "",
     element: <Layout />,
